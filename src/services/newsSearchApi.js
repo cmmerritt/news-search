@@ -7,8 +7,3 @@ export const fetchArticles = async () => {
   const json = await res.json();
   return json.articles;
 };
-
-// image url = urlToImage
-// grab everything from json.articles.[key] e.g. json.articles.title
-// unique id: use url?
-
