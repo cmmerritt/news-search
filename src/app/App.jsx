@@ -1,6 +1,10 @@
 import React from 'react';
 import NewsSearch from '../containers/NewsSearch';
+import SearchForm from '../components/SearchForm';
 
 export default function App() {
-  return <NewsSearch />;
+  return <>
+    <SearchForm />
+    <NewsSearch />
+  </>;
 }
