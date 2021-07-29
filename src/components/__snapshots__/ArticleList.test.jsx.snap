@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList component renders ArticleList 1`] = `
+<DocumentFragment>
+  <ul>
+    <li>
+      <figure>
+        <img
+          alt="Test title 1"
+        />
+        <figcaption>
+          <p>
+            Test title 1
+          </p>
+          <p>
+            Test description 1
+          </p>
+          <p>
+            Test author 1
+          </p>
+          <p>
+            testurl1.com
+          </p>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <figure>
+        <img
+          alt="Test title 2"
+        />
+        <figcaption>
+          <p>
+            Test title 2
+          </p>
+          <p>
+            Test description 2
+          </p>
+          <p>
+            Test author 2
+          </p>
+          <p>
+            testurl2.com
+          </p>
+        </figcaption>
+      </figure>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
