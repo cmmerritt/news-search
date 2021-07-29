@@ -4,7 +4,7 @@ import Article from './Article';
 
 const ArticleList = ({ articles }) => {
   const articleElements = articles.map((article) => (
-    <li key={article.url}>
+    <li key={article.url} >
       <Article 
         title={article.title}
         description={article.description}
@@ -15,7 +15,7 @@ const ArticleList = ({ articles }) => {
     </li>
   ));
 
-  return <ul>{articleElements}</ul>;
+  return <ul data-testid="articleList">{articleElements}</ul>;
 };
 
 ArticleList.propTypes = {

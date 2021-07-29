@@ -11,7 +11,7 @@ export default class NewsSearch extends Component {
     loading: true
   }
 
-  onSubmit = async (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
     const { text } = this.state;
     const articles = await fetchArticlesBySearch(text);
@@ -50,7 +50,7 @@ export default class NewsSearch extends Component {
         <SearchControl 
           text={text}
           onChange={this.handleChange}
-          onSubmit={this.onSubmit}
+          onSubmit={this.handleSubmit}
         />
 
         <ArticleList 
