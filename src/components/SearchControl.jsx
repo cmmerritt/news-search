@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const SearchControl = ({ text, onChange, onSubmit }) => {
   return <form>
     <label htmlFor="text">Search by keyword: </label>
-    <input id="text" placeholder="Search" type="text" name="text" value={text} onChange={onChange} onSubmit={onSubmit}/>
+    <input data-testid="textInput" id="text" placeholder="Search" type="text" name="text" value={text} onChange={onChange} onSubmit={onSubmit}/>
   </form>;
 };
 
