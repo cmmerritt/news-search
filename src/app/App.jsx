@@ -1,10 +1,10 @@
 import React from 'react';
 import NewsSearch from '../containers/NewsSearch';
-import SearchForm from '../components/SearchForm';
+import SearchControl from '../components/SearchControl';
 
 export default function App() {
   return <>
-    <SearchForm />
+    <SearchControl />
     <NewsSearch />
   </>;
 }
