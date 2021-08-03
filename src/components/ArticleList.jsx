@@ -15,7 +15,7 @@ const ArticleList = ({ articles }) => {
     </li>
   ));
 
-  return <ul data-testid="articleList">{articleElements}</ul>;
+  return <ul>{articleElements}</ul>;
 };
 
 ArticleList.propTypes = {

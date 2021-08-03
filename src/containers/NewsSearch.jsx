@@ -8,11 +8,12 @@ export default class NewsSearch extends Component {
   state = {
     articles: [],
     text: 'dinosaur',
-    loading: true
+    loading: false
   }
 
   handleSubmit = async (e) => {
     e.preventDefault();
+    this.setState({ loading: true });
     const { text } = this.state;
     const articles = await fetchArticlesBySearch(text);
     this.setState({ articles, loading: false });
@@ -52,10 +53,11 @@ export default class NewsSearch extends Component {
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}
         />
-
-        <ArticleList 
-          articles={articles} 
-        />
+        <div data-testid="articleList">
+          <ArticleList 
+            articles={articles} 
+          />
+        </div>
       </>
     );
   }

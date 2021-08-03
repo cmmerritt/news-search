@@ -9,6 +9,7 @@ exports[`SearchControl component renders SearchControl 1`] = `
       Search by keyword: 
     </label>
     <input
+      data-testid="textInput"
       id="text"
       name="text"
       placeholder="Search"
