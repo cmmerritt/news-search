@@ -4,7 +4,7 @@ import Article from './Article';
 
 const ArticleList = ({ articles }) => {
   const articleElements = articles.map((article) => (
-    <li key={article.url}>
+    <li key={article.url} >
       <Article 
         title={article.title}
         description={article.description}
